@@ -48,7 +48,12 @@ const onDoLogin = async (event: any) => {
 </script>
 <template>
   <v-dialog v-model="model" max-width="500">
-    <v-card class="mx-auto pa-12 pb-8" width="500" rounded="lg">
+    <v-card
+      class="mx-auto pa-12 pb-8"
+      width="500"
+      style="max-width: 100% !important"
+      rounded="lg"
+    >
       <h4 class="login-header">Login</h4>
       <v-form validate-on="submit" @submit.prevent="onDoLogin">
         <div class="text-subtitle-1 text-medium-emphasis">User Id</div>

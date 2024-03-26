@@ -35,7 +35,7 @@ onMounted(async () => {
 <template>
   <v-container class="custom-height">
     <v-row>
-      <v-col>
+      <v-col cols="12">
         <div class="welcome-header">
           <h1>Welcome to Leaderboard app</h1>
           <p v-if="!userId">Please login to add a new post.</p>
@@ -43,10 +43,10 @@ onMounted(async () => {
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="6">
         <winners />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="6">
         <leaderboard />
       </v-col>
     </v-row>

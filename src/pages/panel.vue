@@ -76,21 +76,21 @@ onMounted(async () => {
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card title="Your total posts">
           <v-card-text>
             <h4 class="card-text">{{ totalPosts }}</h4>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card title="Posts created today">
           <v-card-text>
             <h4 class="card-text">{{ createdPosts }}</h4>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="4">
         <v-card
           title="Your position"
           :class="[userPosition < 3 ? 'user-featured' : '']"
@@ -104,10 +104,10 @@ onMounted(async () => {
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col cols="12" sm="6">
         <create-post />
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="6">
         <leaderboard />
       </v-col>
     </v-row>
