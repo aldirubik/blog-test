@@ -8,12 +8,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     CreatePost: typeof import('./src/components/CreatePost.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Leaderboard: typeof import('./src/components/Leaderboard.vue')['default']
     LoginModal: typeof import('./src/components/LoginModal.vue')['default']
     MainFooter: typeof import('./src/components/MainFooter.vue')['default']
     MainHeader: typeof import('./src/components/MainHeader.vue')['default']
-    NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Winners: typeof import('./src/components/Winners.vue')['default']
